@@ -14,7 +14,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"Chap-Seq",
     "llm_selected_output_b":"ChatGPT-5",
-    "llm_selected_reason":"ChatGPT-5 provides high-level CBT dialogue phases and intervention strategies (e.g., alliance, agenda, cognitive restructuring) with clear, concrete micro-intervention actions that directly operationalize therapist behaviors in patient sessions. Chap-Seq focuses mainly on therapist skill development and documentation, which is less aligned with operationalizing real-time clinical interaction steps.",
+    "llm_selected_reason":"Output B provides high-level CBT dialogue phases and intervention strategies (e.g., alliance, agenda, cognitive restructuring) with clear, concrete micro-intervention actions that directly operationalize therapist behaviors in patient sessions. Output A focuses mainly on therapist skill development and documentation, which is less aligned with operationalizing real-time clinical interaction steps.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -34,7 +34,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"Chap-Seq",
     "llm_selected_output_b":"ChatGPT-5",
-    "llm_selected_reason":"ChatGPT-5 provides clearer, more comprehensive, and clinically relevant cautions foregrounded in patient safety, emotional validation, therapeutic alliance, and cultural context. The risks are specific and linked directly to therapist actions, making it highly practical and better aligned with the component definition.",
+    "llm_selected_reason":"Output B provides clearer, more comprehensive, and clinically relevant cautions foregrounded in patient safety, emotional validation, therapeutic alliance, and cultural context. The risks are specific and linked directly to therapist actions, making it highly practical and better aligned with the component definition.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -54,7 +54,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"Mamba",
     "llm_selected_output_b":"Chap-Seq",
-    "llm_selected_reason":"Chap-Seq provides a much broader and more detailed set of cautions that match the component definition, offering multiple specific warnings and associated risks, which makes it both clearer and more useful for therapists compared to the single caution provided in Mamba.",
+    "llm_selected_reason":"Output B provides a much broader and more detailed set of cautions that match the component definition, offering multiple specific warnings and associated risks, which makes it both clearer and more useful for therapists compared to the single caution provided in Output A.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -74,7 +74,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"Merge-RAG",
     "llm_selected_output_b":"Chap-Seq",
-    "llm_selected_reason":"Merge-RAG provides a more comprehensive and therapy-session-specific set of cautions, directly addressing therapist behaviors to avoid during CBT sessions and offering clear risks. Chap-Seq includes some relevant professional conduct cautions but is less focused on in-session behavior and is less extensive in scope.",
+    "llm_selected_reason":"Output A provides a more comprehensive and therapy-session-specific set of cautions, directly addressing therapist behaviors to avoid during CBT sessions and offering clear risks. Output B includes some relevant professional conduct cautions but is less focused on in-session behavior and is less extensive in scope.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -94,7 +94,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"Chap-Seq",
     "llm_selected_output_b":"TOPA-Per-Book",
-    "llm_selected_reason":"TOPA-Per-Book offers a much more comprehensive, detailed, and specific set of cautions closely aligned with the definition, including clear warnings about actions therapists should not take in CBT and their associated risks. It is more useful due to its broader coverage of potential therapist pitfalls and greater practical clarity than Chap-Seq.",
+    "llm_selected_reason":"Output B offers a much more comprehensive, detailed, and specific set of cautions closely aligned with the definition, including clear warnings about actions therapists should not take in CBT and their associated risks. It is more useful due to its broader coverage of potential therapist pitfalls and greater practical clarity than Output A.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -114,7 +114,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"ChatGPT-5",
     "llm_selected_output_b":"Chunk-RAG",
-    "llm_selected_reason":"ChatGPT-5 provides clearer, more fundamental cautions specific to key principles in cognitive behavioral therapy, such as invalidating emotions, skipping formulation, ignoring safety, and cultural context. Its cautions directly address therapist actions to avoid and the risks are highly relevant for safeguarding effective, ethical CBT practice, making it more useful and comprehensive for the defined component.",
+    "llm_selected_reason":"Output A provides clearer, more fundamental cautions specific to key principles in cognitive behavioral therapy, such as invalidating emotions, skipping formulation, ignoring safety, and cultural context. Its cautions directly address therapist actions to avoid and the risks are highly relevant for safeguarding effective, ethical CBT practice, making it more useful and comprehensive for the defined component.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -134,7 +134,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"ChatGPT-5",
     "llm_selected_output_b":"LC-Full",
-    "llm_selected_reason":"ChatGPT-5 offers a broader and more comprehensive list of cautions that directly match the definition, each clearly specifying what not to do, why, and with detailed risks. LC-Full is also strong but slightly narrower and with less variety in the types of cautions listed.",
+    "llm_selected_reason":"Output A offers a broader and more comprehensive list of cautions that directly match the definition, each clearly specifying what not to do, why, and with detailed risks. Output B is also strong but slightly narrower and with less variety in the types of cautions listed.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -154,7 +154,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"Mamba",
     "llm_selected_output_b":"Chunk-RAG",
-    "llm_selected_reason":"Chunk-RAG provides a comprehensive list of specific cautions, covering a wide range of risks and negative therapist behaviors in CBT sessions. This matches the definition more thoroughly and offers clearer, more useful guidance than the single caution in Mamba.",
+    "llm_selected_reason":"Output B provides a comprehensive list of specific cautions, covering a wide range of risks and negative therapist behaviors in CBT sessions. This matches the definition more thoroughly and offers clearer, more useful guidance than the single caution in Output A.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -174,7 +174,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"Chunk-RAG",
     "llm_selected_output_b":"Merge-RAG",
-    "llm_selected_reason":"Merge-RAG provides a more comprehensive and nuanced set of cautions, including ethical boundaries, diversity sensitivity, countertransference, supervision, and the use of humor, which are all critical but often overlooked in CBT practice. It is also clearer in describing both what to avoid and why, making it more useful to practicing therapists.",
+    "llm_selected_reason":"Output B provides a more comprehensive and nuanced set of cautions, including ethical boundaries, diversity sensitivity, countertransference, supervision, and the use of humor, which are all critical but often overlooked in CBT practice. It is also clearer in describing both what to avoid and why, making it more useful to practicing therapists.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -194,7 +194,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"Chunk-RAG",
     "llm_selected_output_b":"TOPA-Per-Book",
-    "llm_selected_reason":"TOPA-Per-Book provides a significantly more comprehensive and detailed list of cautions, with clear, specific risks and examples covering a wider range of relevant CBT scenarios. Its warnings are both precise and highly actionable for therapists, making it more useful and better aligned with the component definition than Chunk-RAG.",
+    "llm_selected_reason":"Output B provides a significantly more comprehensive and detailed list of cautions, with clear, specific risks and examples covering a wider range of relevant CBT scenarios. Its warnings are both precise and highly actionable for therapists, making it more useful and better aligned with the component definition than Output A.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -214,7 +214,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"Mamba",
     "llm_selected_output_b":"LC-Full",
-    "llm_selected_reason":"LC-Full provides a more comprehensive, clear, and detailed set of cautions directly relevant to the definition. It outlines multiple distinct risks therapists should avoid, offers specific warnings, and is highly useful for guiding clinical practice, whereas Mamba covers only a single caution.",
+    "llm_selected_reason":"Output B provides a more comprehensive, clear, and detailed set of cautions directly relevant to the definition. It outlines multiple distinct risks therapists should avoid, offers specific warnings, and is highly useful for guiding clinical practice, whereas Output A covers only a single caution.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -234,7 +234,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"Mamba",
     "llm_selected_output_b":"TOPA (Early Fusion)",
-    "llm_selected_reason":"TOPA (Early Fusion) provides a much broader and more comprehensive set of warnings and risks, covering various essential clinical cautions relevant to CBT practice. The details are specific, relevant, and more useful for therapists to avoid key pitfalls, whereas Mamba is much narrower in scope and less actionable.",
+    "llm_selected_reason":"Output B provides a much broader and more comprehensive set of warnings and risks, covering various essential clinical cautions relevant to CBT practice. The details are specific, relevant, and more useful for therapists to avoid key pitfalls, whereas Output A is much narrower in scope and less actionable.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -254,7 +254,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"Mamba",
     "llm_selected_output_b":"TOPA-Per-Book",
-    "llm_selected_reason":"TOPA-Per-Book provides a comprehensive, clear, and highly detailed list of specific cautions a therapist should avoid in CBT sessions, directly matching the component definition. Mamba offers only a single, less detailed caution, making TOPA-Per-Book much more useful and aligned with the requirements.",
+    "llm_selected_reason":"Output B provides a comprehensive, clear, and highly detailed list of specific cautions a therapist should avoid in CBT sessions, directly matching the component definition. Output A offers only a single, less detailed caution, making Output B much more useful and aligned with the requirements.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -274,7 +274,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"Policies",
     "llm_selected_output_b":"Merge-RAG",
-    "llm_selected_reason":"Policies provides a more comprehensive, specific, and detailed set of cautions relevant to what therapists should not do in CBT sessions, with examples spanning a range of common pitfalls and therapist errors. Merge-RAG, while clear and also relevant, is less comprehensive and misses several important cautions directly tied to CBT technique and structure.",
+    "llm_selected_reason":"Output A provides a more comprehensive, specific, and detailed set of cautions relevant to what therapists should not do in CBT sessions, with examples spanning a range of common pitfalls and therapist errors. Output B, while clear and also relevant, is less comprehensive and misses several important cautions directly tied to CBT technique and structure.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -294,7 +294,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"Chap-Seq",
     "llm_selected_output_b":"ChatGPT-5",
-    "llm_selected_reason":"ChatGPT-5 directly addresses variables relevant to the dynamic state of the CBT conversation and patient experience—such as emotional arousal, cognitive distortions, and engagement—which align with what a therapist must track during a session. Chap-Seq focuses on therapist characteristics and administrative factors, which are less central to real-time CBT dialogue management.",
+    "llm_selected_reason":"Output B directly addresses variables relevant to the dynamic state of the CBT conversation and patient experience—such as emotional arousal, cognitive distortions, and engagement—which align with what a therapist must track during a session. Output A focuses on therapist characteristics and administrative factors, which are less central to real-time CBT dialogue management.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -314,7 +314,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"Chap-Seq",
     "llm_selected_output_b":"Mamba",
-    "llm_selected_reason":"Mamba more closely matches the component definition by focusing on a clinically relevant variable for CBT conversation management (relapse prevention tools in use), which therapists should track during sessions. Chap-Seq lists therapist skill\/training factors, which are less directly relevant to real-time dialogue tracking during CBT sessions.",
+    "llm_selected_reason":"Output B more closely matches the component definition by focusing on a clinically relevant variable for CBT conversation management (relapse prevention tools in use), which therapists should track during sessions. Output A lists therapist skill\/training factors, which are less directly relevant to real-time dialogue tracking during CBT sessions.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -334,7 +334,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"ChatGPT-5",
     "llm_selected_output_b":"Merge-RAG",
-    "llm_selected_reason":"ChatGPT-5 better matches the component definition by focusing on dynamic, in-session variables that therapists track moment-by-moment during CBT dialogue (e.g., emotional arousal, cognitive distortion salience, engagement), all of which are directly relevant to dialogue management and decision-making. Merge-RAG, while thorough, includes several variables less central to in-session conversational state (e.g., homework, stage of therapy, therapist burnout), making it less precise for the intended use.",
+    "llm_selected_reason":"Output A better matches the component definition by focusing on dynamic, in-session variables that therapists track moment-by-moment during CBT dialogue (e.g., emotional arousal, cognitive distortion salience, engagement), all of which are directly relevant to dialogue management and decision-making. Output B, while thorough, includes several variables less central to in-session conversational state (e.g., homework, stage of therapy, therapist burnout), making it less precise for the intended use.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -354,7 +354,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"ChatGPT-5",
     "llm_selected_output_b":"TOPA-Per-Book",
-    "llm_selected_reason":"TOPA-Per-Book is more comprehensive, covering a broader and more nuanced range of variables relevant for CBT dialogue management—including session progress, homework, barriers, risk, and specific therapeutic processes. It better reflects the complexity of variables an expert therapist should track, offering greater practical value and granularity aligned with the component definition.",
+    "llm_selected_reason":"Output B is more comprehensive, covering a broader and more nuanced range of variables relevant for CBT dialogue management—including session progress, homework, barriers, risk, and specific therapeutic processes. It better reflects the complexity of variables an expert therapist should track, offering greater practical value and granularity aligned with the component definition.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -374,7 +374,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"Chunk-RAG",
     "llm_selected_output_b":"Mamba",
-    "llm_selected_reason":"Chunk-RAG provides a comprehensive, multi-dimensional set of variables that a CBT therapist should continuously track, each with clear relevance to therapy dialogue management and decision-making. Mamba lists only one variable and focuses narrowly on relapse prevention, making it far less useful and less aligned with the full scope of the component definition.",
+    "llm_selected_reason":"Output A provides a comprehensive, multi-dimensional set of variables that a CBT therapist should continuously track, each with clear relevance to therapy dialogue management and decision-making. Output B lists only one variable and focuses narrowly on relapse prevention, making it far less useful and less aligned with the full scope of the component definition.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -394,7 +394,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"TOPA (Early Fusion)",
     "llm_selected_output_b":"DeepSeek",
-    "llm_selected_reason":"TOPA (Early Fusion) provides a much broader and more detailed array of variables that reflect both explicit and implicit dimensions crucial for CBT dialogue management. It covers beliefs, emotions, behavioral processes, therapeutic alliance, motivation, cognitive biases, self-awareness, environment, and learning cycles, making it more comprehensive and practically useful for continuous tracking than DeepSeek, which is more concise but less thorough.",
+    "llm_selected_reason":"Output A provides a much broader and more detailed array of variables that reflect both explicit and implicit dimensions crucial for CBT dialogue management. It covers beliefs, emotions, behavioral processes, therapeutic alliance, motivation, cognitive biases, self-awareness, environment, and learning cycles, making it more comprehensive and practically useful for continuous tracking than Output B, which is more concise but less thorough.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -414,7 +414,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"DeepSeek",
     "llm_selected_output_b":"TOPA-Per-Book",
-    "llm_selected_reason":"TOPA-Per-Book provides a much more comprehensive and granular list of session-tracking variables, covering a wider array of features directly relevant to CBT dialogue management and decision-making. It is clearer, more detailed, and includes more specific, explicit components mentioned in the definition.",
+    "llm_selected_reason":"Output B provides a much more comprehensive and granular list of session-tracking variables, covering a wider array of features directly relevant to CBT dialogue management and decision-making. It is clearer, more detailed, and includes more specific, explicit components mentioned in the definition.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -434,7 +434,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"LC-Full",
     "llm_selected_output_b":"Merge-RAG",
-    "llm_selected_reason":"Merge-RAG provides a broader and more detailed set of continuously tracked variables, including both patient and therapist states. The variables cover session management, feedback mechanisms, cognitive and behavioral processes, and emotional context, better matching the component definition and offering richer detail for CBT dialogue management and decision-making.",
+    "llm_selected_reason":"Output B provides a broader and more detailed set of continuously tracked variables, including both patient and therapist states. The variables cover session management, feedback mechanisms, cognitive and behavioral processes, and emotional context, better matching the component definition and offering richer detail for CBT dialogue management and decision-making.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -454,7 +454,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"Merge-RAG",
     "llm_selected_output_b":"Mamba",
-    "llm_selected_reason":"Merge-RAG provides a comprehensive, multi-dimensional set of variables that are explicitly and implicitly relevant to managing CBT conversation states, matching the definition well. Mamba is narrowly focused on relapse prevention tools and does not cover the broad range of session-state features needed for continuous tracking and decision-making.",
+    "llm_selected_reason":"Output A provides a comprehensive, multi-dimensional set of variables that are explicitly and implicitly relevant to managing CBT conversation states, matching the definition well. Output B is narrowly focused on relapse prevention tools and does not cover the broad range of session-state features needed for continuous tracking and decision-making.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -474,7 +474,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"Chap-Seq",
     "llm_selected_output_b":"LC-Full",
-    "llm_selected_reason":"LC-Full more closely matches the definition by focusing on the specific patient dimensions (cognitions, beliefs, behaviors, history, goals, progress, etc.) crucial for tracking long-term change across sessions. It is also more clearly organized around patient-related elements, making it more directly useful for case formulation and ongoing CBT work.",
+    "llm_selected_reason":"Output B more closely matches the definition by focusing on the specific patient dimensions (cognitions, beliefs, behaviors, history, goals, progress, etc.) crucial for tracking long-term change across sessions. It is also more clearly organized around patient-related elements, making it more directly useful for case formulation and ongoing CBT work.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -494,7 +494,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"Chap-Seq",
     "llm_selected_output_b":"Mamba",
-    "llm_selected_reason":"Chap-Seq provides a comprehensive and well-structured knowledge graph that covers key long-term memory dimensions relevant to tracking a patient across multiple CBT sessions, including treatment plans, therapeutic alliance, case formulation, and therapist factors. Mamba is limited, addressing only relapse and post-therapy considerations, and does not align as closely with the component definition.",
+    "llm_selected_reason":"Output A provides a comprehensive and well-structured knowledge graph that covers key long-term memory dimensions relevant to tracking a patient across multiple CBT sessions, including treatment plans, therapeutic alliance, case formulation, and therapist factors. Output B is limited, addressing only relapse and post-therapy considerations, and does not align as closely with the component definition.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -514,7 +514,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"Merge-RAG",
     "llm_selected_output_b":"Chap-Seq",
-    "llm_selected_reason":"Merge-RAG comprehensively tracks long-term, patient-specific psychological dimensions relevant to CBT, including beliefs, behaviors, symptoms, strengths, and treatment plans, matching the definition of memory dimensions to track across sessions. Chap-Seq focuses primarily on therapist and process variables, which are less central to the given component definition.",
+    "llm_selected_reason":"Output A comprehensively tracks long-term, patient-specific psychological dimensions relevant to CBT, including beliefs, behaviors, symptoms, strengths, and treatment plans, matching the definition of memory dimensions to track across sessions. Output B focuses primarily on therapist and process variables, which are less central to the given component definition.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -534,7 +534,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"Chap-Seq",
     "llm_selected_output_b":"Policies",
-    "llm_selected_reason":"Policies best matches the definition by focusing on patient-centric long-term dimensions—such as beliefs, cognitive distortions, motivation, emotional states, and engagement—essential to tracking CBT progress across sessions. The nodes and edges clearly represent relevant constructs for patient memory, whereas Chap-Seq overemphasizes therapist and supervision factors less central to long-term patient tracking.",
+    "llm_selected_reason":"Output B best matches the definition by focusing on patient-centric long-term dimensions—such as beliefs, cognitive distortions, motivation, emotional states, and engagement—essential to tracking CBT progress across sessions. The nodes and edges clearly represent relevant constructs for patient memory, whereas Output A overemphasizes therapist and supervision factors less central to long-term patient tracking.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -554,7 +554,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"Mamba",
     "llm_selected_output_b":"ChatGPT-5",
-    "llm_selected_reason":"ChatGPT-5 provides a comprehensive and structured representation of clinically relevant, long-term memory dimensions essential to CBT, such as beliefs, thought patterns, emotional and behavioral trends, skills, risks, and progress. Mamba is comparatively limited, focusing mainly on relapse prevention and self-therapy, and does not address the broader range of dimensions tracked across multiple sessions.",
+    "llm_selected_reason":"Output B provides a comprehensive and structured representation of clinically relevant, long-term memory dimensions essential to CBT, such as beliefs, thought patterns, emotional and behavioral trends, skills, risks, and progress. Output A is comparatively limited, focusing mainly on relapse prevention and self-therapy, and does not address the broader range of dimensions tracked across multiple sessions.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -574,7 +574,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"Merge-RAG",
     "llm_selected_output_b":"ChatGPT-5",
-    "llm_selected_reason":"Merge-RAG more comprehensively identifies long-term memory dimensions to track across multiple CBT sessions, such as symptoms, coping strategies, strengths\/assets, physiological reactions, and therapeutic alliance. Its detailed nodes and rich relationship mapping better matches the definition and offers greater clarity and utility for longitudinal tracking than ChatGPT-5.",
+    "llm_selected_reason":"Output A more comprehensively identifies long-term memory dimensions to track across multiple CBT sessions, such as symptoms, coping strategies, strengths\/assets, physiological reactions, and therapeutic alliance. Its detailed nodes and rich relationship mapping better matches the definition and offers greater clarity and utility for longitudinal tracking than Output B.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -594,7 +594,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"ChatGPT-5",
     "llm_selected_output_b":"TOPA (Early Fusion)",
-    "llm_selected_reason":"TOPA (Early Fusion) provides a more comprehensive and detailed set of dimensions to be tracked in long-term memory across sessions, including clinical history, interpersonal factors, cultural aspects, medication, metacognition, and therapeutic process variables, making it clearer and more useful for longitudinal CBT patient tracking. ChatGPT-5 is more limited in scope and less thorough in mapping relevant long-term dimensions.",
+    "llm_selected_reason":"Output B provides a more comprehensive and detailed set of dimensions to be tracked in long-term memory across sessions, including clinical history, interpersonal factors, cultural aspects, medication, metacognition, and therapeutic process variables, making it clearer and more useful for longitudinal CBT patient tracking. Output A is more limited in scope and less thorough in mapping relevant long-term dimensions.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -614,7 +614,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"ChatGPT-5",
     "llm_selected_output_b":"TOPA-Per-Book",
-    "llm_selected_reason":"TOPA-Per-Book offers a significantly broader and more detailed set of long-term memory dimensions that are relevant to tracking a patient’s progress and context across multiple CBT sessions. It covers both core CBT constructs and wider factors like developmental history, life events, strengths\/resources, motivation, and session preferences, making it clearer, more useful, and better matched to the definition.",
+    "llm_selected_reason":"Output B offers a significantly broader and more detailed set of long-term memory dimensions that are relevant to tracking a patient’s progress and context across multiple CBT sessions. It covers both core CBT constructs and wider factors like developmental history, life events, strengths\/resources, motivation, and session preferences, making it clearer, more useful, and better matched to the definition.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -634,7 +634,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"LC-Full",
     "llm_selected_output_b":"Chunk-RAG",
-    "llm_selected_reason":"LC-Full most closely tracks the relevant long-term patient dimensions needed across multiple sessions, clearly labeling major CBT components (e.g., homework history, relapse prevention plan, session summaries) and connecting them explicitly to long-term memory tracking. Its structure and descriptions are more focused on what should persist over time, making it more directly useful per the component definition.",
+    "llm_selected_reason":"Output A most closely tracks the relevant long-term patient dimensions needed across multiple sessions, clearly labeling major CBT components (e.g., homework history, relapse prevention plan, session summaries) and connecting them explicitly to long-term memory tracking. Its structure and descriptions are more focused on what should persist over time, making it more directly useful per the component definition.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -654,7 +654,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"Chunk-RAG",
     "llm_selected_output_b":"Mamba",
-    "llm_selected_reason":"Chunk-RAG provides a comprehensive set of long-term memory dimensions about the patient (core beliefs, developmental history, symptoms, coping strategies, progress, etc.) and clearly maps their relationships, aligning closely with the definition. Mamba is much narrower and omits crucial elements needed for tracking across multiple sessions, making Chunk-RAG more useful and clear.",
+    "llm_selected_reason":"Output A provides a comprehensive set of long-term memory dimensions about the patient (core beliefs, developmental history, symptoms, coping strategies, progress, etc.) and clearly maps their relationships, aligning closely with the definition. Output B is much narrower and omits crucial elements needed for tracking across multiple sessions, making Output A more useful and clear.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -674,7 +674,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"LC-Full",
     "llm_selected_output_b":"Policies",
-    "llm_selected_reason":"Policies provides a broader range of long-term memory dimensions—including process variables like therapeutic alliance, treatment stage, emotion regulation, and external factors—that are crucial for tracking ongoing patient progress and context across multiple sessions. It also offers greater granularity and clinical relevance for CBT, making it more useful and better aligned with the component definition.",
+    "llm_selected_reason":"Output B provides a broader range of long-term memory dimensions—including process variables like therapeutic alliance, treatment stage, emotion regulation, and external factors—that are crucial for tracking ongoing patient progress and context across multiple sessions. It also offers greater granularity and clinical relevance for CBT, making it more useful and better aligned with the component definition.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -694,7 +694,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"Merge-RAG",
     "llm_selected_output_b":"TOPA-Per-Book",
-    "llm_selected_reason":"TOPA-Per-Book provides a more comprehensive, granular set of long-term memory dimensions relevant to tracking the patient over multiple sessions, including factors like treatment history, motivational elements, homework, skill mastery, and social supports, which are useful for ongoing CBT. Merge-RAG is thorough but less expansive and omits practical elements tracked session-to-session.",
+    "llm_selected_reason":"Output B provides a more comprehensive, granular set of long-term memory dimensions relevant to tracking the patient over multiple sessions, including factors like treatment history, motivational elements, homework, skill mastery, and social supports, which are useful for ongoing CBT. Output A is thorough but less expansive and omits practical elements tracked session-to-session.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -714,7 +714,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"Chap-Seq",
     "llm_selected_output_b":"DeepSeek",
-    "llm_selected_reason":"Chap-Seq provides a more thorough and nuanced account of stable patient attributes with multiple domains that influence thinking, feeling, behavior, and CBT engagement, closely matching the component definition. DeepSeek, while clear and concise, covers fewer areas and omits several important stable attributes relevant for realistic CBT simulation.",
+    "llm_selected_reason":"Output A provides a more thorough and nuanced account of stable patient attributes with multiple domains that influence thinking, feeling, behavior, and CBT engagement, closely matching the component definition. Output B, while clear and concise, covers fewer areas and omits several important stable attributes relevant for realistic CBT simulation.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -734,7 +734,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"LC-Full",
     "llm_selected_output_b":"Chap-Seq",
-    "llm_selected_reason":"LC-Full and Chap-Seq are virtually identical in content, structure, and coverage of the user_profile component, both matching the definition well by including comprehensive, stable attributes relevant to CBT. There are no meaningful differences in clarity or usefulness between the two outputs.",
+    "llm_selected_reason":"Output A and Output B are virtually identical in content, structure, and coverage of the user_profile component, both matching the definition well by including comprehensive, stable attributes relevant to CBT. There are no meaningful differences in clarity or usefulness between the two outputs.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -754,7 +754,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"Chap-Seq",
     "llm_selected_output_b":"Merge-RAG",
-    "llm_selected_reason":"Chap-Seq provides a more comprehensive, detailed, and clinically relevant description of stable patient attributes, including cognitive, medical, personality, social, and motivational factors that specifically shape how a patient thinks, feels, behaves, and engages in CBT. Merge-RAG, though clear and organized, is somewhat less detailed and omits medical\/neurocognitive factors important for realistic simulation of therapy responses.",
+    "llm_selected_reason":"Output A provides a more comprehensive, detailed, and clinically relevant description of stable patient attributes, including cognitive, medical, personality, social, and motivational factors that specifically shape how a patient thinks, feels, behaves, and engages in CBT. Output B, though clear and organized, is somewhat less detailed and omits medical\/neurocognitive factors important for realistic simulation of therapy responses.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -774,7 +774,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"TOPA (Early Fusion)",
     "llm_selected_output_b":"Chap-Seq",
-    "llm_selected_reason":"TOPA (Early Fusion) provides a comprehensive and clear representation of stable patient attributes relevant to cognition, emotion, interpersonal style, coping, and engagement in cognitive behavioral therapy. It addresses a broad range of factors shaping typical thoughts, feelings, behaviors, and therapeutic interactions without drifting into overly specific neurocognitive or medical territory as Chap-Seq does. TOPA (Early Fusion) is better aligned with the component definition and is more useful for simulating realistic CBT patient responses.",
+    "llm_selected_reason":"Output A provides a comprehensive and clear representation of stable patient attributes relevant to cognition, emotion, interpersonal style, coping, and engagement in cognitive behavioral therapy. It addresses a broad range of factors shaping typical thoughts, feelings, behaviors, and therapeutic interactions without drifting into overly specific neurocognitive or medical territory as Output B does. Output A is better aligned with the component definition and is more useful for simulating realistic CBT patient responses.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -794,7 +794,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"ChatGPT-5",
     "llm_selected_output_b":"TOPA (Early Fusion)",
-    "llm_selected_reason":"TOPA (Early Fusion) addresses a broader range of stable patient attributes including cultural identity, attachment history, comorbidities, and social support, which are crucial for shaping how a patient typically thinks, feels, behaves, and engages in CBT. It is more comprehensive, reflecting real-world diversity in patient profiles, and aligns more closely with the component definition.",
+    "llm_selected_reason":"Output B addresses a broader range of stable patient attributes including cultural identity, attachment history, comorbidities, and social support, which are crucial for shaping how a patient typically thinks, feels, behaves, and engages in CBT. It is more comprehensive, reflecting real-world diversity in patient profiles, and aligns more closely with the component definition.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -814,7 +814,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"ChatGPT-5",
     "llm_selected_output_b":"TOPA (Late Fusion)",
-    "llm_selected_reason":"ChatGPT-5 better aligns with the component definition by focusing on enduring patient attributes that shape cognitive, emotional, behavioral, and therapeutic engagement styles specifically within the CBT context. Its dimensions are relevant, clearly delineated, and allow practical application to session simulations. TOPA (Late Fusion), while thorough, includes broader biopsychosocial and developmental history content that goes beyond stable CBT-relevant patient attributes.",
+    "llm_selected_reason":"Output A better aligns with the component definition by focusing on enduring patient attributes that shape cognitive, emotional, behavioral, and therapeutic engagement styles specifically within the CBT context. Its dimensions are relevant, clearly delineated, and allow practical application to session simulations. Output B, while thorough, includes broader biopsychosocial and developmental history content that goes beyond stable CBT-relevant patient attributes.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -834,7 +834,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"LC-Full",
     "llm_selected_output_b":"Chunk-RAG",
-    "llm_selected_reason":"LC-Full is more comprehensive, includes multiple psychological, neurocognitive, medical, and personality trait domains, and provides detailed links to how these attributes influence CBT engagement. Chunk-RAG is more general and omits several important areas (e.g., medical risk, cognitive impairment) relevant to stable patient attributes impacting therapy. LC-Full aligns better with the provided definition.",
+    "llm_selected_reason":"Output A is more comprehensive, includes multiple psychological, neurocognitive, medical, and personality trait domains, and provides detailed links to how these attributes influence CBT engagement. Output B is more general and omits several important areas (e.g., medical risk, cognitive impairment) relevant to stable patient attributes impacting therapy. Output A aligns better with the provided definition.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -854,7 +854,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"DeepSeek",
     "llm_selected_output_b":"LC-Full",
-    "llm_selected_reason":"DeepSeek is more clearly focused on stable patient attributes that directly influence engagement, thinking, feeling, behavior, and session participation in CBT, matching the component definition. Its dimensions are specific, actionable, and relevant for simulating realistic CBT responses, whereas LC-Full is overly detailed, medicalized, and focused on neurocognitive and medical pathology not core to CBT user profiling.",
+    "llm_selected_reason":"Output A is more clearly focused on stable patient attributes that directly influence engagement, thinking, feeling, behavior, and session participation in CBT, matching the component definition. Its dimensions are specific, actionable, and relevant for simulating realistic CBT responses, whereas Output B is overly detailed, medicalized, and focused on neurocognitive and medical pathology not core to CBT user profiling.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -874,7 +874,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"DeepSeek",
     "llm_selected_output_b":"Merge-RAG",
-    "llm_selected_reason":"DeepSeek is better aligned with the definition by focusing on stable, therapy-relevant cognitive, affective, and behavioral tendencies that shape engagement in CBT sessions. The dimensions and values are specific, clearly operationalized, and directly relevant for simulating CBT interactions, whereas Merge-RAG is broader, partially overlapping with general personality assessment, and less CBT-specific.",
+    "llm_selected_reason":"Output A is better aligned with the definition by focusing on stable, therapy-relevant cognitive, affective, and behavioral tendencies that shape engagement in CBT sessions. The dimensions and values are specific, clearly operationalized, and directly relevant for simulating CBT interactions, whereas Output B is broader, partially overlapping with general personality assessment, and less CBT-specific.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -894,7 +894,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"TOPA (Early Fusion)",
     "llm_selected_output_b":"DeepSeek",
-    "llm_selected_reason":"TOPA (Early Fusion) is more comprehensive, covering a broader range of stable patient attributes (e.g., attachment, comorbidity, cultural identity) relevant to how a patient thinks, feels, behaves, and engages in CBT. Its clarity and granularity make it more useful for realistically simulating patient profiles in sessions compared to DeepSeek, which is narrower in scope.",
+    "llm_selected_reason":"Output A is more comprehensive, covering a broader range of stable patient attributes (e.g., attachment, comorbidity, cultural identity) relevant to how a patient thinks, feels, behaves, and engages in CBT. Its clarity and granularity make it more useful for realistically simulating patient profiles in sessions compared to Output B, which is narrower in scope.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -914,7 +914,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"TOPA (Late Fusion)",
     "llm_selected_output_b":"DeepSeek",
-    "llm_selected_reason":"TOPA (Late Fusion) covers a broader and more nuanced range of stable patient attributes, including interpersonal functioning, attachment history, identity, and comorbidity, which are all critical for realistically simulating CBT participants. It is also clearer due to its granularity and more comprehensive, clinically relevant dimensions.",
+    "llm_selected_reason":"Output A covers a broader and more nuanced range of stable patient attributes, including interpersonal functioning, attachment history, identity, and comorbidity, which are all critical for realistically simulating CBT participants. It is also clearer due to its granularity and more comprehensive, clinically relevant dimensions.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -934,7 +934,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"LC-Full",
     "llm_selected_output_b":"Mamba",
-    "llm_selected_reason":"LC-Full provides a detailed and comprehensive set of stable patient attributes—including cognitive function, mood, personality traits, interpersonal style, medical risks, and engagement capacity—which directly and clearly match the definition. Mamba mostly describes external factors, diagnostic frameworks, and treatment approaches, rather than stable individual patient characteristics relevant for CBT simulation.",
+    "llm_selected_reason":"Output A provides a detailed and comprehensive set of stable patient attributes—including cognitive function, mood, personality traits, interpersonal style, medical risks, and engagement capacity—which directly and clearly match the definition. Output B mostly describes external factors, diagnostic frameworks, and treatment approaches, rather than stable individual patient characteristics relevant for CBT simulation.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -954,7 +954,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"Merge-RAG",
     "llm_selected_output_b":"LC-Full",
-    "llm_selected_reason":"Merge-RAG more closely matches the component definition by focusing on stable psychological traits (interpersonal functioning, affective stability, cognitive style, engagement, self-concept, coping, insight, and maladaptive traits) that shape how the patient thinks, feels, and behaves in therapy. LC-Full emphasizes neurocognitive vulnerability and medical risk, which are less central to typical CBT patient profiles, making Merge-RAG clearer and more useful for simulating realistic CBT engagement.",
+    "llm_selected_reason":"Output A more closely matches the component definition by focusing on stable psychological traits (interpersonal functioning, affective stability, cognitive style, engagement, self-concept, coping, insight, and maladaptive traits) that shape how the patient thinks, feels, and behaves in therapy. Output B emphasizes neurocognitive vulnerability and medical risk, which are less central to typical CBT patient profiles, making Output A clearer and more useful for simulating realistic CBT engagement.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -974,7 +974,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"Policies",
     "llm_selected_output_b":"LC-Full",
-    "llm_selected_reason":"Policies is clearer, more practical, and better matches the definition by addressing broad, stable patient attributes such as motivation, insight, emotional regulation, interpersonal style, coping, and support—core elements shaping typical engagement and CBT sessions. LC-Full is overly focused on neurocognitive and medical risk factors, resulting in less relevance and generalizability for simulating realistic CBT responses for a diverse patient population.",
+    "llm_selected_reason":"Output A is clearer, more practical, and better matches the definition by addressing broad, stable patient attributes such as motivation, insight, emotional regulation, interpersonal style, coping, and support—core elements shaping typical engagement and CBT sessions. Output B is overly focused on neurocognitive and medical risk factors, resulting in less relevance and generalizability for simulating realistic CBT responses for a diverse patient population.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -994,7 +994,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"Merge-RAG",
     "llm_selected_output_b":"Policies",
-    "llm_selected_reason":"Merge-RAG more thoroughly addresses stable patient attributes directly shaping how the patient thinks, feels, and behaves in psychotherapy, aligning strongly with the definition. It includes detailed dimensions related to interpersonal functioning, cognitive style, affect regulation, engagement, self-concept, and coping mechanisms, all clearly tied to realistic session simulation. Policies, while broad and including relevant aspects, is less comprehensive and blurs stable attributes with more situational\/contextual factors.",
+    "llm_selected_reason":"Output A more thoroughly addresses stable patient attributes directly shaping how the patient thinks, feels, and behaves in psychotherapy, aligning strongly with the definition. It includes detailed dimensions related to interpersonal functioning, cognitive style, affect regulation, engagement, self-concept, and coping mechanisms, all clearly tied to realistic session simulation. Output B, while broad and including relevant aspects, is less comprehensive and blurs stable attributes with more situational\/contextual factors.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1014,7 +1014,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"TOPA (Early Fusion)",
     "llm_selected_output_b":"Merge-RAG",
-    "llm_selected_reason":"TOPA (Early Fusion) offers a more comprehensive, detailed, and clearly organized profile, covering a broader range of patient attributes (including cultural, developmental, support, and readiness factors) that shape engagement in CBT. Its categories and definitions are more thorough and specifically tie back to the stable, realistic attributes outlined in the component definition.",
+    "llm_selected_reason":"Output A offers a more comprehensive, detailed, and clearly organized profile, covering a broader range of patient attributes (including cultural, developmental, support, and readiness factors) that shape engagement in CBT. Its categories and definitions are more thorough and specifically tie back to the stable, realistic attributes outlined in the component definition.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1034,7 +1034,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"TOPA (Late Fusion)",
     "llm_selected_output_b":"Merge-RAG",
-    "llm_selected_reason":"TOPA (Late Fusion) provides a more comprehensive and structured set of stable patient attributes, clearly linking each dimension to cognitive, emotional, interpersonal, and therapy engagement factors. It also addresses cultural, developmental, social support, and comorbid aspects, making it more aligned with the definition and more useful for simulating realistic responses in CBT.",
+    "llm_selected_reason":"Output A provides a more comprehensive and structured set of stable patient attributes, clearly linking each dimension to cognitive, emotional, interpersonal, and therapy engagement factors. It also addresses cultural, developmental, social support, and comorbid aspects, making it more aligned with the definition and more useful for simulating realistic responses in CBT.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1054,7 +1054,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"Policies",
     "llm_selected_output_b":"TOPA (Early Fusion)",
-    "llm_selected_reason":"Policies more closely matches the definition by emphasizing stable, trait-like patient attributes (e.g., family\/social support, functional impairment, coping style, stigma, cultural identity) and includes clear descriptions of how these affect engagement in CBT. TOPA (Early Fusion) contains some overlapping dimensions but blends state and trait factors and sometimes lacks clarity and direct relevance to CBT session engagement. Overall, Policies is clearer and more useful.",
+    "llm_selected_reason":"Output A more closely matches the definition by emphasizing stable, trait-like patient attributes (e.g., family\/social support, functional impairment, coping style, stigma, cultural identity) and includes clear descriptions of how these affect engagement in CBT. Output B contains some overlapping dimensions but blends state and trait factors and sometimes lacks clarity and direct relevance to CBT session engagement. Overall, Output A is clearer and more useful.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1074,7 +1074,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"Policies",
     "llm_selected_output_b":"TOPA (Late Fusion)",
-    "llm_selected_reason":"Policies provides dimensions that directly map to stable patient attributes relevant to how the patient thinks, feels, and behaves in CBT sessions, with clear focus on session engagement, collaboration, emotional regulation, and stigma, matching the definition. The descriptions and value anchors are straightforward and useful for realistic simulation. TOPA (Late Fusion) includes overlapping and some additional factors (like developmental history), but several categories are less defined or broader, making Policies clearer and a better direct match.",
+    "llm_selected_reason":"Output A provides dimensions that directly map to stable patient attributes relevant to how the patient thinks, feels, and behaves in CBT sessions, with clear focus on session engagement, collaboration, emotional regulation, and stigma, matching the definition. The descriptions and value anchors are straightforward and useful for realistic simulation. Output B includes overlapping and some additional factors (like developmental history), but several categories are less defined or broader, making Output A clearer and a better direct match.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1114,7 +1114,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"TOPA-Per-Book",
     "llm_selected_output_b":"TOPA (Early Fusion)",
-    "llm_selected_reason":"TOPA-Per-Book and TOPA (Early Fusion) are nearly identical in content, structure, clarity, and relevance to the component definition. Both cover the required dimensions of stable patient attributes for simulating realistic CBT patient profiles equally well.",
+    "llm_selected_reason":"Output A and Output B are nearly identical in content, structure, clarity, and relevance to the component definition. Both cover the required dimensions of stable patient attributes for simulating realistic CBT patient profiles equally well.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1154,7 +1154,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"ChatGPT-5",
     "llm_selected_output_b":"TOPA (Early Fusion)",
-    "llm_selected_reason":"TOPA (Early Fusion) provides a more comprehensive, clear, and systematic breakdown of both high-level CBT phases and corresponding micro-intervention actions compared to ChatGPT-5. The structure in B is more granular, aligns better with clinical practice, and offers actionable detail for each therapeutic strategy, making it more useful for operationalizing therapist behavior at each utterance.",
+    "llm_selected_reason":"Output B provides a more comprehensive, clear, and systematic breakdown of both high-level CBT phases and corresponding micro-intervention actions compared to Output A. The structure in B is more granular, aligns better with clinical practice, and offers actionable detail for each therapeutic strategy, making it more useful for operationalizing therapist behavior at each utterance.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1174,7 +1174,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"ChatGPT-5",
     "llm_selected_output_b":"DeepSeek",
-    "llm_selected_reason":"ChatGPT-5 provides a broader and more detailed set of cautions with specific examples relevant to CBT, as well as precise descriptions of risks and negative actions to avoid. It aligns more closely with the component definition by offering clearer warnings to therapists about what not to do in sessions.",
+    "llm_selected_reason":"Output A provides a broader and more detailed set of cautions with specific examples relevant to CBT, as well as precise descriptions of risks and negative actions to avoid. It aligns more closely with the component definition by offering clearer warnings to therapists about what not to do in sessions.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1194,7 +1194,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"ChatGPT-5",
     "llm_selected_output_b":"Policies",
-    "llm_selected_reason":"Policies is more comprehensive, includes a greater range of specific cautions, and provides clearer, more actionable warnings that are directly relevant for therapists conducting CBT sessions. ChatGPT-5 is solid but less exhaustive and contains fewer nuanced risks and negative actions.",
+    "llm_selected_reason":"Output B is more comprehensive, includes a greater range of specific cautions, and provides clearer, more actionable warnings that are directly relevant for therapists conducting CBT sessions. Output A is solid but less exhaustive and contains fewer nuanced risks and negative actions.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1214,7 +1214,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"Policies",
     "llm_selected_output_b":"DeepSeek",
-    "llm_selected_reason":"Policies provides a much more comprehensive, specific, and nuanced array of cautions relevant to CBT sessions, thoroughly covering both common and subtle risks, and explicitly linking actions to consequences. DeepSeek, while accurate and relevant, is less detailed and omits several important cautions found in Policies.",
+    "llm_selected_reason":"Output A provides a much more comprehensive, specific, and nuanced array of cautions relevant to CBT sessions, thoroughly covering both common and subtle risks, and explicitly linking actions to consequences. Output B, while accurate and relevant, is less detailed and omits several important cautions found in Output A.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1234,7 +1234,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"TOPA-Per-Book",
     "llm_selected_output_b":"DeepSeek",
-    "llm_selected_reason":"TOPA-Per-Book is significantly more comprehensive, covering a much wider range of specific cautions relevant to CBT practice. It clearly details what therapists should not do, provides supporting rationale, and addresses nuanced scenarios, making it far more useful per the component definition. DeepSeek, while clear, is narrower and less thorough.",
+    "llm_selected_reason":"Output A is significantly more comprehensive, covering a much wider range of specific cautions relevant to CBT practice. It clearly details what therapists should not do, provides supporting rationale, and addresses nuanced scenarios, making it far more useful per the component definition. Output B, while clear, is narrower and less thorough.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1254,7 +1254,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"Policies",
     "llm_selected_output_b":"TOPA (Early Fusion)",
-    "llm_selected_reason":"Policies provides more detailed cautions with comprehensive descriptions, specific risks, and examples. It more closely follows the component definition by clearly stating what therapists should not do and elaborating on the possible consequences, making it clearer and more useful than TOPA (Early Fusion), which, while thorough, is less precise in some descriptions.",
+    "llm_selected_reason":"Output A provides more detailed cautions with comprehensive descriptions, specific risks, and examples. It more closely follows the component definition by clearly stating what therapists should not do and elaborating on the possible consequences, making it clearer and more useful than Output B, which, while thorough, is less precise in some descriptions.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1274,7 +1274,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"Policies",
     "llm_selected_output_b":"TOPA-Per-Book",
-    "llm_selected_reason":"TOPA-Per-Book provides a much more comprehensive, detailed, and nuanced list of cautions, encompassing a wider range of potential harmful therapist behaviors with clear explanations of risk. It covers ethical, relational, technical, and pacing concerns that are essential for safe and effective CBT practice, making it more useful and complete than Policies.",
+    "llm_selected_reason":"Output B provides a much more comprehensive, detailed, and nuanced list of cautions, encompassing a wider range of potential harmful therapist behaviors with clear explanations of risk. It covers ethical, relational, technical, and pacing concerns that are essential for safe and effective CBT practice, making it more useful and complete than Output A.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1294,7 +1294,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"DeepSeek",
     "llm_selected_output_b":"ChatGPT-5",
-    "llm_selected_reason":"ChatGPT-5 offers a broader and more nuanced range of variables, covering emotional type, session focus, cognitive distortions, emotional regulation, and engagement, which are all critically relevant for effective CBT dialogue management. The variables are clearly defined and address both explicit and implicit session dynamics, making it more useful and aligned with the component definition.",
+    "llm_selected_reason":"Output B offers a broader and more nuanced range of variables, covering emotional type, session focus, cognitive distortions, emotional regulation, and engagement, which are all critically relevant for effective CBT dialogue management. The variables are clearly defined and address both explicit and implicit session dynamics, making it more useful and aligned with the component definition.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1314,7 +1314,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"Policies",
     "llm_selected_output_b":"ChatGPT-5",
-    "llm_selected_reason":"Policies is more comprehensive, covering a broader range of relevant session variables (including patient, therapist, process, and safety factors) and each entry includes detailed descriptive guidance and practical dimensions that would inform CBT dialogue management and clinical decision-making. ChatGPT-5 is more concise but omits many important dimensions tracked in real CBT practice.",
+    "llm_selected_reason":"Output A is more comprehensive, covering a broader range of relevant session variables (including patient, therapist, process, and safety factors) and each entry includes detailed descriptive guidance and practical dimensions that would inform CBT dialogue management and clinical decision-making. Output B is more concise but omits many important dimensions tracked in real CBT practice.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1334,7 +1334,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"ChatGPT-5",
     "llm_selected_output_b":"TOPA (Early Fusion)",
-    "llm_selected_reason":"ChatGPT-5 provides a focused, clearly organized set of variables closely aligned with core CBT processes, directly supporting dialogue management and in-session decision-making. It avoids extraneous factors and keeps the scope practical for real-time therapeutic tracking, whereas TOPA (Early Fusion) covers a broader range—including some less session-relevant or redundant items—making it less clear and actionable according to the component definition.",
+    "llm_selected_reason":"Output A provides a focused, clearly organized set of variables closely aligned with core CBT processes, directly supporting dialogue management and in-session decision-making. It avoids extraneous factors and keeps the scope practical for real-time therapeutic tracking, whereas Output B covers a broader range—including some less session-relevant or redundant items—making it less clear and actionable according to the component definition.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1354,7 +1354,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"Policies",
     "llm_selected_output_b":"DeepSeek",
-    "llm_selected_reason":"Policies is significantly more comprehensive, covering a broader and deeper set of variables explicitly relevant to therapist dialogue management and CBT decision-making. It details both therapist and patient states, skill mastery, therapy process factors, and session-specific features with clarity and actionable descriptions, closely matching the component definition. DeepSeek, while clear, is less comprehensive and omits several critical dimensions for ongoing session management.",
+    "llm_selected_reason":"Output A is significantly more comprehensive, covering a broader and deeper set of variables explicitly relevant to therapist dialogue management and CBT decision-making. It details both therapist and patient states, skill mastery, therapy process factors, and session-specific features with clarity and actionable descriptions, closely matching the component definition. Output B, while clear, is less comprehensive and omits several critical dimensions for ongoing session management.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1374,7 +1374,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"TOPA-Per-Book",
     "llm_selected_output_b":"TOPA (Early Fusion)",
-    "llm_selected_reason":"TOPA-Per-Book comprehensively lists a broader range of variables central to CBT dialogue management, with clear relevance to both cognitive and behavioral domains, including detailed aspects like therapeutic alliance, homework, cognitive distortions, readiness, barriers, and session progress. TOPA (Early Fusion) is useful but is more limited in scope and does not match the completeness or specificity of TOPA-Per-Book.",
+    "llm_selected_reason":"Output A comprehensively lists a broader range of variables central to CBT dialogue management, with clear relevance to both cognitive and behavioral domains, including detailed aspects like therapeutic alliance, homework, cognitive distortions, readiness, barriers, and session progress. Output B is useful but is more limited in scope and does not match the completeness or specificity of Output A.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1394,7 +1394,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"Policies",
     "llm_selected_output_b":"ChatGPT-5",
-    "llm_selected_reason":"Policies covers a broader range of long-term memory dimensions and tracks more granular aspects relevant to CBT over time, such as therapeutic alliance, session engagement, external factors, and specific behavioral patterns. Its detail and comprehensiveness provide clearer and more useful tracking of session-to-session changes aligned with the component definition.",
+    "llm_selected_reason":"Output A covers a broader range of long-term memory dimensions and tracks more granular aspects relevant to CBT over time, such as therapeutic alliance, session engagement, external factors, and specific behavioral patterns. Its detail and comprehensiveness provide clearer and more useful tracking of session-to-session changes aligned with the component definition.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1414,7 +1414,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"DeepSeek",
     "llm_selected_output_b":"TOPA-Per-Book",
-    "llm_selected_reason":"DeepSeek better matches the definition by focusing on key CBT constructs that must be tracked longitudinally (core beliefs, intermediate beliefs, symptom trajectory, coping skills, etc.) and clearly describes the relational and interdependent structure between nodes, while avoiding extraneous session-level details found in TOPA-Per-Book. DeepSeek’s clarity and focus are more useful for long-term memory dimensions as required by the component definition.",
+    "llm_selected_reason":"Output A better matches the definition by focusing on key CBT constructs that must be tracked longitudinally (core beliefs, intermediate beliefs, symptom trajectory, coping skills, etc.) and clearly describes the relational and interdependent structure between nodes, while avoiding extraneous session-level details found in Output B. Output A’s clarity and focus are more useful for long-term memory dimensions as required by the component definition.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1434,7 +1434,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"Policies",
     "llm_selected_output_b":"TOPA (Late Fusion)",
-    "llm_selected_reason":"TOPA (Late Fusion) provides a more comprehensive and detailed coverage of long-term memory dimensions relevant to CBT, capturing medical, developmental, cultural, and behavioral history as well as therapy progress, which aligns better with the definition and overall clinical utility for tracking across sessions. Its organization and breadth make it clearer and more useful for longitudinal understanding.",
+    "llm_selected_reason":"Output B provides a more comprehensive and detailed coverage of long-term memory dimensions relevant to CBT, capturing medical, developmental, cultural, and behavioral history as well as therapy progress, which aligns better with the definition and overall clinical utility for tracking across sessions. Its organization and breadth make it clearer and more useful for longitudinal understanding.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1454,7 +1454,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"Policies",
     "llm_selected_output_b":"TOPA-Per-Book",
-    "llm_selected_reason":"Policies more closely aligns with the component definition by explicitly outlining long-term patient factors highly relevant across multiple CBT sessions, such as beliefs, emotional regulation, alliance, homework, relapse prevention, and progress. Its structure and edges demonstrate the interconnected, multi-session nature of CBT and facilitate ongoing tracking; TOPA-Per-Book, while comprehensive, includes more general therapy metadata and less direct focus on session-to-session cognitive-behavioral constructs.",
+    "llm_selected_reason":"Output A more closely aligns with the component definition by explicitly outlining long-term patient factors highly relevant across multiple CBT sessions, such as beliefs, emotional regulation, alliance, homework, relapse prevention, and progress. Its structure and edges demonstrate the interconnected, multi-session nature of CBT and facilitate ongoing tracking; Output B, while comprehensive, includes more general therapy metadata and less direct focus on session-to-session cognitive-behavioral constructs.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1474,7 +1474,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"TOPA-Per-Book",
     "llm_selected_output_b":"TOPA (Early Fusion)",
-    "llm_selected_reason":"TOPA (Early Fusion) provides more comprehensive and precisely delineated long-term memory dimensions, closely matching the definition, and includes richer clinical constructs (e.g., metacognitive beliefs, relapse factors, cultural background, and case formulation). Its descriptions are more specific to the purpose of multi-session tracking, making it clearer and more useful for CBT case management.",
+    "llm_selected_reason":"Output B provides more comprehensive and precisely delineated long-term memory dimensions, closely matching the definition, and includes richer clinical constructs (e.g., metacognitive beliefs, relapse factors, cultural background, and case formulation). Its descriptions are more specific to the purpose of multi-session tracking, making it clearer and more useful for CBT case management.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1494,7 +1494,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"TOPA (Late Fusion)",
     "llm_selected_output_b":"TOPA-Per-Book",
-    "llm_selected_reason":"TOPA (Late Fusion) provides a far more comprehensive and granular set of long-term memory dimensions relevant to CBT, with clear explanations and thorough tracking categories (e.g., trauma history, personality traits, physical symptoms, comorbidities) and detailed relationships reflecting complexity over sessions; TOPA-Per-Book is simpler and less detailed, missing several crucial dimensions from the definition.",
+    "llm_selected_reason":"Output A provides a far more comprehensive and granular set of long-term memory dimensions relevant to CBT, with clear explanations and thorough tracking categories (e.g., trauma history, personality traits, physical symptoms, comorbidities) and detailed relationships reflecting complexity over sessions; Output B is simpler and less detailed, missing several crucial dimensions from the definition.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1514,7 +1514,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"ChatGPT-5",
     "llm_selected_output_b":"DeepSeek",
-    "llm_selected_reason":"ChatGPT-5 provides a broader and more comprehensive set of stable patient attributes directly relevant to how patients think, feel, behave, and engage in CBT. It covers more dimensions (e.g., coping style, motivation for change, cognitive flexibility) that collectively match the component definition, and uses clear and familiar terminology, making it more useful for simulating realistic patient responses.",
+    "llm_selected_reason":"Output A provides a broader and more comprehensive set of stable patient attributes directly relevant to how patients think, feel, behave, and engage in CBT. It covers more dimensions (e.g., coping style, motivation for change, cognitive flexibility) that collectively match the component definition, and uses clear and familiar terminology, making it more useful for simulating realistic patient responses.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1534,7 +1534,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"Policies",
     "llm_selected_output_b":"ChatGPT-5",
-    "llm_selected_reason":"Policies better matches the definition by focusing on stable patient attributes that impact thoughts, feelings, behaviors, and engagement in CBT sessions. It provides comprehensive, clinically relevant dimensions (like insight, engagement, emotional regulation, interpersonal style, support, and stigma) that directly influence realistic responses in therapy. ChatGPT-5, while useful, focuses more on trait-like cognitive and emotional styles and omits key environmental and social factors present in A.",
+    "llm_selected_reason":"Output A better matches the definition by focusing on stable patient attributes that impact thoughts, feelings, behaviors, and engagement in CBT sessions. It provides comprehensive, clinically relevant dimensions (like insight, engagement, emotional regulation, interpersonal style, support, and stigma) that directly influence realistic responses in therapy. Output B, while useful, focuses more on trait-like cognitive and emotional styles and omits key environmental and social factors present in A.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1554,7 +1554,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"DeepSeek",
     "llm_selected_output_b":"Policies",
-    "llm_selected_reason":"DeepSeek provides more targeted, theoretically grounded dimensions (e.g., maladaptive schemas, therapeutic alliance propensity, cognitive engagement style) directly relevant to how a patient typically thinks, feels, and behaves in the context of CBT. Its language and categories are more specific to the mechanisms and processes central to cognitive behavioral therapy sessions, which fits the component definition better.",
+    "llm_selected_reason":"Output A provides more targeted, theoretically grounded dimensions (e.g., maladaptive schemas, therapeutic alliance propensity, cognitive engagement style) directly relevant to how a patient typically thinks, feels, and behaves in the context of CBT. Its language and categories are more specific to the mechanisms and processes central to cognitive behavioral therapy sessions, which fits the component definition better.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1574,7 +1574,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"TOPA-Per-Book",
     "llm_selected_output_b":"DeepSeek",
-    "llm_selected_reason":"TOPA-Per-Book provides a broader, more detailed multidimensional representation of stable patient attributes, including clear links to thinking, feeling, and behavior in the CBT context. It offers a more realistic and nuanced framework for simulating patient responses, whereas DeepSeek is narrower and omits key dimensions such as social context, developmental history, and comorbidity.",
+    "llm_selected_reason":"Output A provides a broader, more detailed multidimensional representation of stable patient attributes, including clear links to thinking, feeling, and behavior in the CBT context. It offers a more realistic and nuanced framework for simulating patient responses, whereas Output B is narrower and omits key dimensions such as social context, developmental history, and comorbidity.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1594,7 +1594,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"ChatGPT-5",
     "llm_selected_output_b":"Policies",
-    "llm_selected_reason":"Policies provides a more comprehensive, detailed, and granular breakdown of therapist action phases, strategies, and micro-interventions throughout a CBT dialogue. Each phase contains specific, practical micro-actions and robust scenario coverage, enhancing clarity and usability for operationalizing CBT at the utterance level compared to ChatGPT-5.",
+    "llm_selected_reason":"Output B provides a more comprehensive, detailed, and granular breakdown of therapist action phases, strategies, and micro-interventions throughout a CBT dialogue. Each phase contains specific, practical micro-actions and robust scenario coverage, enhancing clarity and usability for operationalizing CBT at the utterance level compared to Output A.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1614,7 +1614,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"TOPA-Per-Book",
     "llm_selected_output_b":"DeepSeek",
-    "llm_selected_reason":"TOPA-Per-Book provides a far more exhaustive, detailed, and structured breakdown of therapist interventions, including both high-level strategies and micro-interventions, and covers the full breadth of CBT sessions. Its clarity and utility as an action specification for each dialogue phase are superior to the more limited and less granular set in DeepSeek.",
+    "llm_selected_reason":"Output A provides a far more exhaustive, detailed, and structured breakdown of therapist interventions, including both high-level strategies and micro-interventions, and covers the full breadth of CBT sessions. Its clarity and utility as an action specification for each dialogue phase are superior to the more limited and less granular set in Output B.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1634,7 +1634,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"TOPA-Per-Book",
     "llm_selected_output_b":"TOPA (Early Fusion)",
-    "llm_selected_reason":"TOPA-Per-Book is more comprehensive, covering a broader range of high-level CBT dialogue phases and strategies, each operationalized with clear, granular micro-interventions that map closely to therapist utterance-level actions, aligning well with the component definition. TOPA (Early Fusion) is well-structured and accurate but somewhat less granular and misses some distinct CBT phases found in TOPA-Per-Book.",
+    "llm_selected_reason":"Output A is more comprehensive, covering a broader range of high-level CBT dialogue phases and strategies, each operationalized with clear, granular micro-interventions that map closely to therapist utterance-level actions, aligning well with the component definition. Output B is well-structured and accurate but somewhat less granular and misses some distinct CBT phases found in Output A.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1654,7 +1654,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"ChatGPT-5",
     "llm_selected_output_b":"TOPA (Early Fusion)",
-    "llm_selected_reason":"TOPA (Early Fusion) better matches the definition as it provides a wider and more specific range of cautions that include ethical, cultural, clinical, and procedural risks relevant to what therapists should not do during CBT. The cautions are clear, detailed, and practical, making it more useful overall than ChatGPT-5.",
+    "llm_selected_reason":"Output B better matches the definition as it provides a wider and more specific range of cautions that include ethical, cultural, clinical, and procedural risks relevant to what therapists should not do during CBT. The cautions are clear, detailed, and practical, making it more useful overall than Output A.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1674,7 +1674,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"TOPA (Late Fusion)",
     "llm_selected_output_b":"ChatGPT-5",
-    "llm_selected_reason":"TOPA (Late Fusion) provides a much more comprehensive list of cautions with clear, specific descriptions of what therapists should avoid, offering breadth and depth across the range of CBT risks. ChatGPT-5 covers fundamental cautions but is more limited in scope and detail, making TOPA (Late Fusion) more useful and closely matched to the component definition.",
+    "llm_selected_reason":"Output A provides a much more comprehensive list of cautions with clear, specific descriptions of what therapists should avoid, offering breadth and depth across the range of CBT risks. Output B covers fundamental cautions but is more limited in scope and detail, making Output A more useful and closely matched to the component definition.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1694,7 +1694,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"ChatGPT-5",
     "llm_selected_output_b":"TOPA-Per-Book",
-    "llm_selected_reason":"TOPA-Per-Book is significantly more comprehensive, covering a wider range of specific risks and inappropriate therapist behaviors during CBT. Its cautions are more detailed and granular, making it more useful and instructive, while still remaining clear and closely aligned with the definition.",
+    "llm_selected_reason":"Output B is significantly more comprehensive, covering a wider range of specific risks and inappropriate therapist behaviors during CBT. Its cautions are more detailed and granular, making it more useful and instructive, while still remaining clear and closely aligned with the definition.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1714,7 +1714,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"TOPA (Late Fusion)",
     "llm_selected_output_b":"DeepSeek",
-    "llm_selected_reason":"TOPA (Late Fusion) is more comprehensive and systematically covers a wider range of specific cautions, with detailed explanations of each negative action and its associated risk. DeepSeek is more limited in scope and detail, making TOPA (Late Fusion) clearer and more useful for therapists.",
+    "llm_selected_reason":"Output A is more comprehensive and systematically covers a wider range of specific cautions, with detailed explanations of each negative action and its associated risk. Output B is more limited in scope and detail, making Output A clearer and more useful for therapists.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1734,7 +1734,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"Policies",
     "llm_selected_output_b":"TOPA (Late Fusion)",
-    "llm_selected_reason":"TOPA (Late Fusion) provides a broader range of specific cautions that are relevant to cognitive behavioral therapy, including legal, ethical, and professional boundaries, as well as therapy structure and patient safety. It is clearer and more useful for therapists with a comprehensive set of actionable warnings aligned with the component definition.",
+    "llm_selected_reason":"Output B provides a broader range of specific cautions that are relevant to cognitive behavioral therapy, including legal, ethical, and professional boundaries, as well as therapy structure and patient safety. It is clearer and more useful for therapists with a comprehensive set of actionable warnings aligned with the component definition.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1754,7 +1754,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"TOPA (Late Fusion)",
     "llm_selected_output_b":"TOPA (Early Fusion)",
-    "llm_selected_reason":"TOPA (Late Fusion) provides a more comprehensive and detailed list of cautions, with clear descriptions, specific risks, and contextually relevant negative actions. It better covers the broad range of therapist behaviors to avoid, giving the therapist more actionable and useful warnings. TOPA (Early Fusion), while clear and relevant, is less exhaustive and detailed.",
+    "llm_selected_reason":"Output A provides a more comprehensive and detailed list of cautions, with clear descriptions, specific risks, and contextually relevant negative actions. It better covers the broad range of therapist behaviors to avoid, giving the therapist more actionable and useful warnings. Output B, while clear and relevant, is less exhaustive and detailed.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1774,7 +1774,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"TOPA (Late Fusion)",
     "llm_selected_output_b":"TOPA (Early Fusion)",
-    "llm_selected_reason":"TOPA (Late Fusion) provides a much more comprehensive and clinically relevant list of variables for CBT session management, with clear descriptions, categorical and numerical granularity. It covers all major aspects of CBT including mood, cognition, behaviors, therapist factors, and context, aligning closely with the component definition. TOPA (Early Fusion), while concise and relevant, omits important dimensions and offers less detail.",
+    "llm_selected_reason":"Output A provides a much more comprehensive and clinically relevant list of variables for CBT session management, with clear descriptions, categorical and numerical granularity. It covers all major aspects of CBT including mood, cognition, behaviors, therapist factors, and context, aligning closely with the component definition. Output B, while concise and relevant, omits important dimensions and offers less detail.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1794,7 +1794,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"ChatGPT-5",
     "llm_selected_output_b":"DeepSeek",
-    "llm_selected_reason":"ChatGPT-5 is clearer and more directly focused on dimensions that should be tracked long-term, with specific CBT constructs (core beliefs, cognitive distortions, behavioral and emotional patterns, relapse risk factors) and logical connections. DeepSeek includes several relevant items but is less consistent in prioritizing only long-term memory targets, sometimes adding contextual\/social nodes which feel less central. ChatGPT-5 matches the component definition more closely.",
+    "llm_selected_reason":"Output A is clearer and more directly focused on dimensions that should be tracked long-term, with specific CBT constructs (core beliefs, cognitive distortions, behavioral and emotional patterns, relapse risk factors) and logical connections. Output B includes several relevant items but is less consistent in prioritizing only long-term memory targets, sometimes adding contextual\/social nodes which feel less central. Output A matches the component definition more closely.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1814,7 +1814,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"TOPA (Late Fusion)",
     "llm_selected_output_b":"ChatGPT-5",
-    "llm_selected_reason":"TOPA (Late Fusion) is more comprehensive and granular, covering a greater number of long-term memory dimensions relevant to tracking a patient across CBT sessions. It incorporates both clinical, contextual, and psychological factors, provides detailed node descriptions, and demonstrates clear and extensive mapping of relationships, making it more useful and better matched to the component definition than ChatGPT-5.",
+    "llm_selected_reason":"Output A is more comprehensive and granular, covering a greater number of long-term memory dimensions relevant to tracking a patient across CBT sessions. It incorporates both clinical, contextual, and psychological factors, provides detailed node descriptions, and demonstrates clear and extensive mapping of relationships, making it more useful and better matched to the component definition than Output B.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1834,7 +1834,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"DeepSeek",
     "llm_selected_output_b":"Policies",
-    "llm_selected_reason":"DeepSeek is more tightly aligned with the definition, focusing on high-value long-term memory dimensions like beliefs, coping skills, behavioral patterns, support systems, and skill generalization, all of which are relevant to tracking therapeutic progress across sessions. Policies, while comprehensive, mixes session-level process variables and is less clearly organized around persistent, trackable patient factors.",
+    "llm_selected_reason":"Output A is more tightly aligned with the definition, focusing on high-value long-term memory dimensions like beliefs, coping skills, behavioral patterns, support systems, and skill generalization, all of which are relevant to tracking therapeutic progress across sessions. Output B, while comprehensive, mixes session-level process variables and is less clearly organized around persistent, trackable patient factors.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1854,7 +1854,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"DeepSeek",
     "llm_selected_output_b":"TOPA (Early Fusion)",
-    "llm_selected_reason":"TOPA (Early Fusion) provides a more comprehensive and nuanced mapping of long-term memory dimensions relevant to CBT, with clear tracking of history, diagnosis, cognitive\/emotional\/behavioral patterns, and therapeutic process variables. Its breadth and specificity better match the definition and enhance clarity and usefulness for multi-session tracking than DeepSeek.",
+    "llm_selected_reason":"Output B provides a more comprehensive and nuanced mapping of long-term memory dimensions relevant to CBT, with clear tracking of history, diagnosis, cognitive\/emotional\/behavioral patterns, and therapeutic process variables. Its breadth and specificity better match the definition and enhance clarity and usefulness for multi-session tracking than Output A.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1874,7 +1874,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"TOPA (Early Fusion)",
     "llm_selected_output_b":"Policies",
-    "llm_selected_reason":"TOPA (Early Fusion) is more comprehensive, covering a wider array of long-term dimensions relevant to CBT (including cultural, physiological, risk, and insight factors) and provides richer, clearer descriptions for each tracked component. Its graph structure is more explicit and better organized for clinical long-term tracking compared to Policies, which omits several key dimensions and is less detailed.",
+    "llm_selected_reason":"Output A is more comprehensive, covering a wider array of long-term dimensions relevant to CBT (including cultural, physiological, risk, and insight factors) and provides richer, clearer descriptions for each tracked component. Its graph structure is more explicit and better organized for clinical long-term tracking compared to Output B, which omits several key dimensions and is less detailed.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1894,7 +1894,7 @@
     "llm_selected_swap_order_in_prompt":false,
     "llm_selected_output_a":"ChatGPT-5",
     "llm_selected_output_b":"TOPA-Per-Book",
-    "llm_selected_reason":"ChatGPT-5 is more focused on core stable psychological attributes that specifically influence thinking, feeling, behavior, and engagement within cognitive behavioral therapy. It addresses user engagement in session, alliance orientation, and session-specific dimensions, making it clearer, more targeted, and more useful for simulating realistic CBT responses. TOPA-Per-Book, while comprehensive, includes more biographical and context factors not as central to in-session CBT dynamics.",
+    "llm_selected_reason":"Output A is more focused on core stable psychological attributes that specifically influence thinking, feeling, behavior, and engagement within cognitive behavioral therapy. It addresses user engagement in session, alliance orientation, and session-specific dimensions, making it clearer, more targeted, and more useful for simulating realistic CBT responses. Output B, while comprehensive, includes more biographical and context factors not as central to in-session CBT dynamics.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
@@ -1914,7 +1914,7 @@
     "llm_selected_swap_order_in_prompt":true,
     "llm_selected_output_a":"TOPA-Per-Book",
     "llm_selected_output_b":"Policies",
-    "llm_selected_reason":"TOPA-Per-Book offers a more comprehensive and nuanced set of stable patient attributes, clearly distinguishing between cognitive, emotional, social, developmental, and identity factors. Its level of detail and conceptual breadth provide better coverage for simulating realistic and individualized patient profiles in CBT than Policies, which, while clear, is less thorough.",
+    "llm_selected_reason":"Output A offers a more comprehensive and nuanced set of stable patient attributes, clearly distinguishing between cognitive, emotional, social, developmental, and identity factors. Its level of detail and conceptual breadth provide better coverage for simulating realistic and individualized patient profiles in CBT than Output B, which, while clear, is less thorough.",
     "expert_followup_winner_choice":"",
     "expert_followup_agreement_choice":"",
     "expert_followup_feedback":""
