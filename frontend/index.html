@@ -2,9 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>frontend</title>
+    <title>TOPA Expert Feedback</title>
     <script>
       (function () {
         var l = window.location;
@@ -15,7 +14,7 @@
           params.delete("p");
           params.delete("q");
 
-          var repo = "/topa-survey";
+          var repo = "/topa-expert-feedback";
           var newPath = repo + (p.startsWith("/") ? p : "/" + p);
           var newSearch = q ? "?" + q : "";
           window.history.replaceState(null, "", newPath + newSearch + l.hash);

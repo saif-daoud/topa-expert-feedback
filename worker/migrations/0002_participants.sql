@@ -1,5 +1,1 @@
--- 0002_participants.sql
-CREATE TABLE IF NOT EXISTS participants (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  created_at TEXT NOT NULL
-);
+-- Schema is fully defined in 0001_init.sql for the follow-up survey.

@@ -23,7 +23,7 @@ jobs:
       - name: Build frontend
         working-directory: frontend
         env:
-          VITE_API_BASE: https://topa-firestore-worker-api-2.saif-sedaoud.workers.dev/api
+          VITE_API_BASE: https://topa-expert-feedback-worker.saif-sedaoud.workers.dev/api
         run: |
           npm ci
           npm run build

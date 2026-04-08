@@ -1,5 +1,5 @@
 {
-  "name": "topa-firestore-worker-api-2",
+  "name": "topa-expert-feedback-worker",
   "private": true,
   "type": "module",
   "devDependencies": {
