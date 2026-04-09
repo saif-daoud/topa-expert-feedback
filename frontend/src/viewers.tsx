@@ -477,7 +477,7 @@ export function MethodOutputCard({
   component,
   value,
 }: {
-  label: "Method A" | "Method B";
+  label: string;
   methodName: string;
   component: string;
   value: any;

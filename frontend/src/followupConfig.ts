@@ -1,6 +1,7 @@
 export type Descriptions = Record<string, string>;
 
 export type MethodCatalog = {
+  id: string;
   key: string;
   name: string;
   file: string;
@@ -115,27 +116,29 @@ export const APP_DESC = `
 `;
 
 export const FOLLOWUP_METHODS: MethodCatalog[] = [
-  { key: "chatgpt5", name: "ChatGPT-5", file: "methods/ChatGPT.json", aliases: ["ChatGPT-5", "ChatGPT"] },
-  { key: "deepseek", name: "DeepSeek", file: "methods/DeepSeek.json", aliases: ["DeepSeek"] },
-  { key: "chapseq", name: "Chap-Seq", file: "methods/Chap_Seq.json", aliases: ["Chap-Seq", "Chap_Seq"] },
-  { key: "lcfull", name: "LC-Full", file: "methods/LC_Full.json", aliases: ["LC-Full", "LC_Full"] },
-  { key: "chunkrag", name: "Chunk-RAG", file: "methods/Chunk_RAG.json", aliases: ["Chunk-RAG", "Chunk_RAG"] },
-  { key: "policies", name: "Policies", file: "methods/Rules.json", aliases: ["Policies", "Rules"] },
-  { key: "topaperbook", name: "TOPA-Per-Book", file: "methods/TOPA-Per-Book.json", aliases: ["TOPA-Per-Book"] },
+  { id: "A", key: "chatgpt5", name: "ChatGPT-5", file: "methods/ChatGPT.json", aliases: ["ChatGPT-5", "ChatGPT"] },
+  { id: "B", key: "deepseek", name: "DeepSeek", file: "methods/DeepSeek.json", aliases: ["DeepSeek"] },
+  { id: "C", key: "chapseq", name: "Chap-Seq", file: "methods/Chap_Seq.json", aliases: ["Chap-Seq", "Chap_Seq"] },
+  { id: "D", key: "lcfull", name: "LC-Full", file: "methods/LC_Full.json", aliases: ["LC-Full", "LC_Full"] },
+  { id: "E", key: "chunkrag", name: "Chunk-RAG", file: "methods/Chunk_RAG.json", aliases: ["Chunk-RAG", "Chunk_RAG"] },
+  { id: "F", key: "policies", name: "Policies", file: "methods/Rules.json", aliases: ["Policies", "Rules"] },
+  { id: "G", key: "topaperbook", name: "TOPA-Per-Book", file: "methods/TOPA-Per-Book.json", aliases: ["TOPA-Per-Book"] },
   {
+    id: "H",
     key: "topalatefusion",
     name: "TOPA (Late Fusion)",
     file: "methods/TOPAOurExtractor_LateFusion.json",
     aliases: ["TOPA (Late Fusion)", "TOPA Late Fusion"],
   },
   {
+    id: "I",
     key: "topaearlyfusion",
     name: "TOPA (Early Fusion)",
     file: "methods/TOPAOurExtractor_EarlyFusion.json",
     aliases: ["TOPA (Early Fusion)", "TOPA Early Fusion"],
   },
-  { key: "mamba", name: "Mamba", file: "methods/Mamba.json", aliases: ["Mamba"] },
-  { key: "mergerag", name: "Merge-RAG", file: "methods/Merge_RAG.json", aliases: ["Merge-RAG", "Merge_RAG"] },
+  { id: "J", key: "mamba", name: "Mamba", file: "methods/Mamba.json", aliases: ["Mamba"] },
+  { id: "K", key: "mergerag", name: "Merge-RAG", file: "methods/Merge_RAG.json", aliases: ["Merge-RAG", "Merge_RAG"] },
 ];
 
 export const AGREEMENT_OPTIONS: { value: AgreementChoice; label: string; help: string }[] = [
@@ -185,6 +188,12 @@ export function normalizeMethodName(value: string) {
 
 export function findMethodCatalog(methodName: string) {
   return METHOD_LOOKUP.get(normalizeMethodName(methodName)) ?? null;
+}
+
+export function getMethodDisplayLabel(methodName: string, fallback?: string) {
+  const catalog = findMethodCatalog(methodName);
+  if (catalog?.id) return `Method ${catalog.id}`;
+  return fallback || "Unknown";
 }
 
 export function nowUtc() {

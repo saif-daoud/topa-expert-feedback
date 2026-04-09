@@ -7,6 +7,7 @@ import {
   FOLLOWUP_METHODS,
   ISSUE_OPTIONS,
   STORAGE_KEYS,
+  getMethodDisplayLabel,
   normalizeMethodName,
   nowUtc,
   prettify,
@@ -230,6 +231,8 @@ function SurveyPage() {
   const currentComponent = currentComparison?.component || assignedComparisons[0]?.component || "";
   const methodXValue = currentComparison ? getMethodOutput(methods, currentComparison["Method X"], currentComparison.component) : null;
   const methodYValue = currentComparison ? getMethodOutput(methods, currentComparison["Method Y"], currentComparison.component) : null;
+  const methodXLabel = currentComparison ? getMethodDisplayLabel(currentComparison["Method X"], "Method X") : "Method X";
+  const methodYLabel = currentComparison ? getMethodDisplayLabel(currentComparison["Method Y"], "Method Y") : "Method Y";
   const pendingTotal = participantHistory.filter((row) => row?.synced !== true).length;
 
   useEffect(() => {
@@ -528,8 +531,8 @@ function SurveyPage() {
             <LlmSummaryCard comparison={currentComparison} />
 
             <div className="grid2">
-              <MethodOutputCard label="Method A" methodName={currentComparison["Method X"]} component={currentComparison.component} value={methodXValue} />
-              <MethodOutputCard label="Method B" methodName={currentComparison["Method Y"]} component={currentComparison.component} value={methodYValue} />
+              <MethodOutputCard label={methodXLabel} methodName={currentComparison["Method X"]} component={currentComparison.component} value={methodXValue} />
+              <MethodOutputCard label={methodYLabel} methodName={currentComparison["Method Y"]} component={currentComparison.component} value={methodYValue} />
             </div>
 
             <div className="card voteCard">
@@ -540,8 +543,8 @@ function SurveyPage() {
                 <div className="questionPrompt">1. Which option do you prefer?</div>
                 <div className="choiceList">
                   {[
-                    { value: "method_x" as WinnerChoice, label: "Method A", help: "You prefer Method A." },
-                    { value: "method_y" as WinnerChoice, label: "Method B", help: "You prefer Method B." },
+                    { value: "method_x" as WinnerChoice, label: methodXLabel, help: `You prefer ${methodXLabel}.` },
+                    { value: "method_y" as WinnerChoice, label: methodYLabel, help: `You prefer ${methodYLabel}.` },
                     { value: "tie" as WinnerChoice, label: "Tie", help: "Both options are equally good." },
                   ].map((option) => (
                     <label key={option.value} className={`choiceOption ${winnerChoice === option.value ? "active" : ""}`}>
