@@ -100,19 +100,22 @@ export const FOLLOWUP_ASSIGNMENT_TARGET = 30;
 export const COMPONENT_ORDER = ["action_space", "conversation_state", "knowledge_graph", "cautions", "user_profile"];
 
 export const APP_DESC = `
-<p><strong>Welcome, and thank you for contributing your expertise to this study.</strong></p>
-<p>We are developing an AI system designed to <strong>simulate a mental health provider delivering Cognitive Behavioral Therapy (CBT).</strong></p>
-<p>To do this responsibly, we automatically extract key components of CBT interventions from clinical textbooks. Your role is to help us evaluate the quality of these extracted components.</p>
-<p>In this study, you will review the same main types of outputs as in the original survey:</p>
-<p><strong>1. Macro Actions</strong> - high-level therapeutic moves.</p>
-<p><strong>2. Micro Actions</strong> - directly actionable steps at the utterance level.</p>
-<p><strong>3. Conversation State</strong> - the system's moment-to-moment understanding of the client and the therapy process.</p>
-<p><strong>4. Knowledge Graph</strong> - structured clinical concepts and their relationships.</p>
-<p><strong>5. Cautions</strong> - risks or warnings describing what the therapist should not do.</p>
-<p><strong>6. User Profile</strong> - stable patient attributes that shape realistic responses.</p>
-<p>For each component, you will see side-by-side results produced by different extraction methods. In this version, you will also see the LLM's preferred option and its rationale for that comparison.</p>
-<p>Your evaluations will help us refine an AI agent that behaves in a way that is safer, more consistent, and more aligned with real CBT interventions.</p>
-<p>When you're ready, click <strong>Start</strong> to begin.</p>
+<strong>Welcome, and thank you for contributing your expertise to this study.</strong><br><br>
+We are developing an AI system designed to <strong>simulate a mental health provider delivering Cognitive Behavioral Therapy (CBT).</strong><br>
+To do this responsibly, we automatically extract key components of CBT interventions from clinical textbooks. Your role is to help us evaluate the quality of these extracted components.<br><br>
+In this study, you will review three types of outputs the system generates:<br>
+    <strong>1. Macro Actions –</strong> high-level therapeutic moves (e.g., cognitive restructuring, problem-solving, agenda setting).<br>
+    <strong>2. Micro Actions –</strong> are directly actionable at the utterance level and realize the underlying macro action.<br>
+    <strong>3. Conversation State –</strong> the system’s moment-to-moment understanding of the client’s thoughts, feelings, behaviors, and therapeutic progress.<br>
+    <strong>4. Knowledge Graph –</strong> structured clinical concepts and their relationships, used to guide the AI’s reasoning and intervention planning.<br>
+    <strong>5. Cautions –</strong> warnings or risks that describe what the therapist should *not* do during a cognitive behavioral therapy session with the patient.<br>
+    <strong>6. User Profile –</strong> stable patient attributes that shape how the patient typically thinks, feels, behaves, and engages in cognitive behavioral therapy session with the therapist that help simulate realistic responses.<br><br>
+For each of these components, you will see <strong>side-by-side results produced by different extraction methods.</strong><br>
+Your task is to <strong>choose the option that best reflects accurate, clinically meaningful CBT practice.</strong> There are no right or wrong answers — we are seeking your clinical judgment.<br><br>
+and to provide the issues with the unpreferred method, you will also see the LLM's preferred option and its rationale for that comparison.<br><br>
+Your evaluations will help us refine an AI agent that behaves in a way that is safer, more consistent, and more aligned with real CBT interventions.<br>
+Thank you for reading through the description details to make an informed judgement.<br><br>
+When you’re ready, click <strong>Start</strong> to begin.
 `;
 
 export const FOLLOWUP_METHODS: MethodCatalog[] = [
