@@ -112,7 +112,7 @@ In this study, you will review three types of outputs the system generates:<br>
     <strong>6. User Profile –</strong> stable patient attributes that shape how the patient typically thinks, feels, behaves, and engages in cognitive behavioral therapy session with the therapist that help simulate realistic responses.<br><br>
 For each of these components, you will see <strong>side-by-side results produced by different extraction methods.</strong><br>
 Your task is to <strong>choose the option that best reflects accurate, clinically meaningful CBT practice.</strong> There are no right or wrong answers — we are seeking your clinical judgment.<br><br>
-and to provide the issues with the unpreferred method, you will also see the LLM's preferred option and its rationale for that comparison.<br><br>
+To help you explain that judgment, you will also see the LLM's preferred option and its rationale for that comparison, and you will be asked to identify the issues in the unpreferred method.<br><br>
 Your evaluations will help us refine an AI agent that behaves in a way that is safer, more consistent, and more aligned with real CBT interventions.<br>
 Thank you for reading through the description details to make an informed judgement.<br><br>
 When you’re ready, click <strong>Start</strong> to begin.
