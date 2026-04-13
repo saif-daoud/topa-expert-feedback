@@ -318,6 +318,94 @@ function CautionsView({ data }: { data: any }) {
   return <ValueView value={removeConfidence(data)} />;
 }
 
+function normalizeUserProfileDimensionRow(value: any): Record<string, any> {
+  if (!isRecord(value)) return { value: String(clipText(value ?? "", 1200)) };
+
+  const name = value.dimension_name ?? value["Dimension Name"] ?? value.name ?? value.dimension ?? "";
+  const description = value.description ?? value.Description ?? "";
+  const options =
+    value.options ??
+    value.option_values ??
+    value.categorical_values ??
+    value["categorical values"] ??
+    value["Categorical Values"] ??
+    value.categories ??
+    null;
+  const selectedValue = value.value ?? value.Value ?? value["Numerical values"] ?? value.numerical_values ?? value.selected_value ?? null;
+
+  const normalized: Record<string, any> = {};
+  if (!isEmptyValue(name)) normalized.dimension_name = name;
+  if (!isEmptyValue(description)) normalized.description = description;
+  if (!isEmptyValue(options)) normalized.options = Array.isArray(options) ? options.join(", ") : options;
+  if (!isEmptyValue(selectedValue)) normalized.value = selectedValue;
+
+  for (const [key, nestedValue] of Object.entries(value)) {
+    if (
+      [
+        "dimension_name",
+        "Dimension Name",
+        "name",
+        "dimension",
+        "description",
+        "Description",
+        "options",
+        "option_values",
+        "categorical_values",
+        "categorical values",
+        "Categorical Values",
+        "categories",
+        "value",
+        "Value",
+        "Numerical values",
+        "numerical_values",
+        "selected_value",
+      ].includes(key)
+    ) {
+      continue;
+    }
+
+    if (isEmptyValue(nestedValue)) continue;
+    normalized[key] = Array.isArray(nestedValue) ? nestedValue.join(", ") : isRecord(nestedValue) ? JSON.stringify(nestedValue) : nestedValue;
+  }
+
+  return normalized;
+}
+
+function UserProfileSection({ title, rows }: { title: string; rows: any[] }) {
+  if (!rows.length) return null;
+
+  return (
+    <div className="stack">
+      <div className="label">{title}</div>
+      <TableView data={rows.map(normalizeUserProfileDimensionRow)} />
+    </div>
+  );
+}
+
+function UserProfileView({ data }: { data: any }) {
+  if (Array.isArray(data)) {
+    return <UserProfileSection title="User profile dimensions" rows={data} />;
+  }
+
+  if (isRecord(data)) {
+    const categoricalKey = bestMatchingKey(data, "categorical_dimensions");
+    const freeFormKey = bestMatchingKey(data, "free_form_dimensions");
+    const categoricalRows = categoricalKey && Array.isArray(data[categoricalKey]) ? data[categoricalKey] : [];
+    const freeFormRows = freeFormKey && Array.isArray(data[freeFormKey]) ? data[freeFormKey] : [];
+
+    if (categoricalRows.length || freeFormRows.length) {
+      return (
+        <div className="stack">
+          <UserProfileSection title="Categorical dimensions" rows={categoricalRows} />
+          <UserProfileSection title="Free-form dimensions" rows={freeFormRows} />
+        </div>
+      );
+    }
+  }
+
+  return <ValueView value={data} />;
+}
+
 function ActionSpaceView({ data }: { data: any }) {
   const macroActions = Array.isArray(data) ? data : [];
   const shownActions = macroActions.slice(0, 80);
@@ -468,6 +556,7 @@ export function ComponentViewer({ component, value }: { component: string; value
     return <ConversationStateView data={cleanedValue} />;
   }
   if (normalizedComponent.includes("caution")) return <CautionsView data={cleanedValue} />;
+  if (normalizedComponent === "userprofile") return <UserProfileView data={cleanedValue} />;
   return <ValueView value={cleanedValue} />;
 }
 

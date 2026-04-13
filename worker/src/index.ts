@@ -10,6 +10,7 @@ const JSON_HEADERS = { "Content-Type": "application/json" };
 const TOKEN_TTL_MS = 7 * 24 * 60 * 60 * 1000;
 const TARGET_ASSIGNMENT_COUNT = 30;
 const COMPONENT_ORDER = ["action_space", "conversation_state", "knowledge_graph", "cautions", "user_profile"];
+const DEBUG_USER_PROFILE_FIRST_EMAILS = new Set(["saif.sedaoud@gmail.com"]);
 
 function cors(origin: string) {
   return {
@@ -350,6 +351,12 @@ async function dbGetParticipantAssignment(env: Env, participantId: string, compa
   );
 }
 
+async function dbGetParticipantEmail(env: Env, participantId: string) {
+  const id = parseParticipantId(participantId);
+  const row = await env.DB.prepare("SELECT email FROM participants WHERE id = ? LIMIT 1").bind(id).first<{ email: string | null }>();
+  return sanitizeText(row?.email, 320) || "";
+}
+
 async function dbGetResponseCountsByComparison(env: Env) {
   const rows = await env.DB
     .prepare("SELECT comparison_id, COUNT(*) AS n FROM followup_responses GROUP BY comparison_id")
@@ -482,6 +489,22 @@ async function ensureParticipantAssignments(env: Env, participantId: string) {
 
   assignments = await dbListParticipantAssignments(env, participantId);
   return assignments.slice(0, wanted);
+}
+
+function orderComparisonsForParticipantDebug(comparisons: any[], participantEmail: string) {
+  if (!DEBUG_USER_PROFILE_FIRST_EMAILS.has(String(participantEmail || "").trim().toLowerCase())) return comparisons;
+
+  return [...comparisons]
+    .sort((left, right) => {
+      const leftRank = String(left?.component || "") === "user_profile" ? 0 : 1;
+      const rightRank = String(right?.component || "") === "user_profile" ? 0 : 1;
+      if (leftRank !== rightRank) return leftRank - rightRank;
+      return Number(left?.sequence_index || 0) - Number(right?.sequence_index || 0);
+    })
+    .map((comparison, index) => ({
+      ...comparison,
+      sequence_index: index + 1,
+    }));
 }
 
 async function dbUpsertResponse(env: Env, row: FollowupResponseRow) {
@@ -720,12 +743,16 @@ export default {
 
       const participant_id = String(payload.participant_id || "");
       const assignments = await ensureParticipantAssignments(env, participant_id);
-      const comparisons = assignments
+      const participantEmail = await dbGetParticipantEmail(env, participant_id);
+      const comparisons = orderComparisonsForParticipantDebug(
+        assignments
         .map((assignment) => {
           const seed = COMPARISON_POOL_BY_ID.get(assignment.comparison_id);
           return seed ? buildComparisonPayload(seed, assignment) : null;
         })
-        .filter(Boolean);
+        .filter(Boolean),
+        participantEmail
+      );
 
       return new Response(
         JSON.stringify({

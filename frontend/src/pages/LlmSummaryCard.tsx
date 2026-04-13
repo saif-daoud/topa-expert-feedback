@@ -45,15 +45,6 @@ function LlmSummaryCard({ comparison }: { comparison: FollowupComparison }) {
         </div>
       </div>
 
-      {!comparison.llm_all_runs_agree && (
-        <div className="callout warningCallout">
-          <div className="calloutTitle">Runs were not unanimous</div>
-          <div className="calloutBody">
-            The chosen judgment was supported by {comparison.llm_supporting_runs || 0} out of 3 runs, so this is a lower-confidence LLM signal.
-          </div>
-        </div>
-      )}
-
       <div className="questionBlock compactBlock">
         <div className="questionPrompt">LLM rationale</div>
         <div className="descBox" dangerouslySetInnerHTML={{ __html: renderMiniMarkdown(displayedReason) }} />
