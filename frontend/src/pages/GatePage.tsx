@@ -11,6 +11,9 @@ function friendlyGateError(error: any) {
   if (!message || message.toLowerCase() === "failed to fetch" || message === "Request timed out") {
     return `We could not reach the server after ${GATE_MAX_ATTEMPTS} attempts. Please wait a moment and try again.`;
   }
+  if (message === "Please enter your email to continue.") {
+    return message;
+  }
   return `Error: ${message}`;
 }
 

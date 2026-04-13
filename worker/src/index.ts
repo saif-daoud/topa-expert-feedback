@@ -10,6 +10,8 @@ const JSON_HEADERS = { "Content-Type": "application/json" };
 const TOKEN_TTL_MS = 7 * 24 * 60 * 60 * 1000;
 const TARGET_ASSIGNMENT_COUNT = 30;
 const COMPONENT_ORDER = ["action_space", "conversation_state", "knowledge_graph", "cautions", "user_profile"];
+const BLOCKED_ENTRY_EMAILS = new Set(["saif.sedaoud@gmail.com"]);
+const BLOCKED_ENTRY_MESSAGE = "Please enter your email to continue.";
 
 function cors(origin: string) {
   return {
@@ -221,6 +223,10 @@ function parseParticipantId(participantId: string) {
 function sanitizeText(value: unknown, maxLen: number) {
   const text = String(value ?? "").trim();
   return text.length > maxLen ? text.slice(0, maxLen) : text;
+}
+
+function isBlockedEntryEmail(email: string) {
+  return BLOCKED_ENTRY_EMAILS.has(String(email || "").trim().toLowerCase());
 }
 
 function normalizeMethodName(value: string) {
@@ -626,6 +632,9 @@ export default {
       const code = String(body.code || "").trim();
       const email = sanitizeText(body.email, 320);
       if (!code) return new Response(JSON.stringify({ error: "Missing code" }), { status: 400, headers });
+      if (email && isBlockedEntryEmail(email)) {
+        return new Response(JSON.stringify({ error: BLOCKED_ENTRY_MESSAGE }), { status: 400, headers });
+      }
 
       const codeHash = await sha256Hex(code);
       const accessCode = await dbGetAccessCode(env, codeHash);
@@ -665,6 +674,10 @@ export default {
     if (path.endsWith("/api/profile")) {
       const body: any = await req.json().catch(() => ({}));
       if (!body?.token || !body?.profile) return new Response(JSON.stringify({ error: "Missing token or profile" }), { status: 400, headers });
+      const requestedEmail = sanitizeText(body.profile?.email, 320);
+      if (requestedEmail && isBlockedEntryEmail(requestedEmail)) {
+        return new Response(JSON.stringify({ error: BLOCKED_ENTRY_MESSAGE }), { status: 400, headers });
+      }
 
       let payload: any;
       try {
@@ -675,7 +688,7 @@ export default {
 
       const currentParticipantId = String(payload.participant_id || "");
       const codeHash = String(payload.codeHash || "");
-      const existingParticipant = await dbFindParticipantByEmail(env, sanitizeText(body.profile?.email, 320));
+      const existingParticipant = await dbFindParticipantByEmail(env, requestedEmail);
       const participant_id = existingParticipant?.participant_id || currentParticipantId;
 
       try {
