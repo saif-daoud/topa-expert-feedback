@@ -491,16 +491,25 @@ async function ensureParticipantAssignments(env: Env, participantId: string) {
   return assignments.slice(0, wanted);
 }
 
-function orderComparisonsForParticipantDebug(comparisons: any[], participantEmail: string) {
-  if (!DEBUG_USER_PROFILE_FIRST_EMAILS.has(String(participantEmail || "").trim().toLowerCase())) return comparisons;
+async function buildUserProfileOnlyDebugComparisons(env: Env, participantId: string, participantEmail: string) {
+  if (!DEBUG_USER_PROFILE_FIRST_EMAILS.has(String(participantEmail || "").trim().toLowerCase())) return null;
 
-  return [...comparisons]
-    .sort((left, right) => {
-      const leftRank = String(left?.component || "") === "user_profile" ? 0 : 1;
-      const rightRank = String(right?.component || "") === "user_profile" ? 0 : 1;
-      if (leftRank !== rightRank) return leftRank - rightRank;
-      return Number(left?.sequence_index || 0) - Number(right?.sequence_index || 0);
-    })
+  const [existingResponses, responseCounts, openAssignmentCounts] = await Promise.all([
+    dbListParticipantResponses(env, participantId),
+    dbGetResponseCountsByComparison(env),
+    dbGetOpenAssignmentCountsByComparison(env),
+  ]);
+
+  const answeredComparisonIds = new Set(existingResponses.map((row) => String(row?.comparison_id || "")).filter(Boolean));
+
+  return COMPARISON_POOL
+    .filter((seed) => seed.component === "user_profile" && !answeredComparisonIds.has(seed.comparison_id))
+    .map((seed) => ({
+      ...seed,
+      expert_n: seed.expert_n,
+      effective_expert_n: comparisonCoverageForAssignment(seed, responseCounts, openAssignmentCounts),
+    }))
+    .sort(comparisonSelectionSort)
     .map((comparison, index) => ({
       ...comparison,
       sequence_index: index + 1,
@@ -742,23 +751,22 @@ export default {
       }
 
       const participant_id = String(payload.participant_id || "");
-      const assignments = await ensureParticipantAssignments(env, participant_id);
       const participantEmail = await dbGetParticipantEmail(env, participant_id);
-      const comparisons = orderComparisonsForParticipantDebug(
-        assignments
-        .map((assignment) => {
-          const seed = COMPARISON_POOL_BY_ID.get(assignment.comparison_id);
-          return seed ? buildComparisonPayload(seed, assignment) : null;
-        })
-        .filter(Boolean),
-        participantEmail
-      );
+      const debugComparisons = await buildUserProfileOnlyDebugComparisons(env, participant_id, participantEmail);
+      const comparisons =
+        debugComparisons ??
+        (await ensureParticipantAssignments(env, participant_id))
+          .map((assignment) => {
+            const seed = COMPARISON_POOL_BY_ID.get(assignment.comparison_id);
+            return seed ? buildComparisonPayload(seed, assignment) : null;
+          })
+          .filter(Boolean);
 
       return new Response(
         JSON.stringify({
           ok: true,
-          target_count: targetAssignmentCount(),
-          pool_size: COMPARISON_POOL.length,
+          target_count: debugComparisons ? debugComparisons.length : targetAssignmentCount(),
+          pool_size: debugComparisons ? debugComparisons.length : COMPARISON_POOL.length,
           comparisons,
         }),
         { headers }
