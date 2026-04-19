@@ -352,7 +352,7 @@ function SurveyPage() {
 
   async function submitResponse() {
     const trimmedFeedback = feedback.trim();
-    if (!currentComparison || !winnerChoice || issueTags.length === 0 || !trimmedFeedback || !participantId) return;
+    if (!currentComparison || !winnerChoice || issueTags.length === 0 || !participantId) return;
 
     const selectedMethodName = winnerChoice === "method_x" ? currentComparison["Method X"] : winnerChoice === "method_y" ? currentComparison["Method Y"] : null;
     const llmWinner = currentComparison.llm_selected_winner || currentComparison.llm_consensus_winner || "";
@@ -380,7 +380,7 @@ function SurveyPage() {
       expert_selected_method_name: selectedMethodName,
       expert_matches_llm_selected: expertMatchesLlm,
       issue_tags: issueTags,
-      feedback: trimmedFeedback,
+      feedback: trimmedFeedback || null,
       source_expert_n: currentComparison.expert_n,
       effective_expert_n: currentComparison.effective_expert_n ?? null,
       timestamp_utc: nowUtc(),
@@ -585,12 +585,12 @@ function SurveyPage() {
               </div>
 
               <div className="questionBlock">
-                <div className="questionPrompt">3. Feedback</div>
+                <div className="questionPrompt">3. Optional feedback</div>
                 <textarea className="textarea" placeholder="Explain your reasoning, what the output content have missed." value={feedback} onChange={(event) => setFeedback(event.target.value)} rows={4} />
               </div>
 
               <div className="voteBar">
-                <button className="btn btnPrimary" onClick={() => void submitResponse()} disabled={!winnerChoice || issueTags.length === 0 || !feedback.trim() || submitting}>
+                <button className="btn btnPrimary" onClick={() => void submitResponse()} disabled={!winnerChoice || issueTags.length === 0 || submitting}>
                   {submitting ? "Saving..." : "Save response"}
                 </button>
                 <button className="btn btnGhost" onClick={() => void syncPendingResponses()} disabled={syncing}>Sync saved responses</button>
@@ -600,7 +600,7 @@ function SurveyPage() {
         ) : (
           <div className="card">
             <div className="titleSm">Assignment complete</div>
-            <div className="note">You have answered all {totalAssigned || targetCount} assigned follow-up comparisons.</div>
+            <div className="note">You have answered all {totalAssigned || targetCount} assigned follow-up comparisons, Thank you very much for your time and support !.</div>
           </div>
         )}
       </div>

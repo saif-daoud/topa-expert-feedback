@@ -579,7 +579,6 @@ function toResponseRow(response: any, participant_id: string, req: Request, assi
   const issueTags = Array.isArray(response.issue_tags) ? Array.from(new Set(response.issue_tags.map((value: any) => normalizeIssueTag(String(value))))) : [];
   if (issueTags.length === 0) throw new Error("At least one issue must be selected");
   const normalizedFeedback = sanitizeText(response.feedback, 5000);
-  if (!normalizedFeedback) throw new Error("Feedback is required");
   const agreement_choice = deriveAgreementChoice(winner_choice, llmWinner, sanitizeText(response.method_x_name, 200), sanitizeText(response.method_y_name, 200));
 
   return {
@@ -605,7 +604,7 @@ function toResponseRow(response: any, participant_id: string, req: Request, assi
     expert_matches_llm_selected,
     agreement_choice,
     issue_tags_json: JSON.stringify(issueTags),
-    feedback: normalizedFeedback,
+    feedback: normalizedFeedback || null,
     source_expert_n: assignment?.source_expert_n ?? (seed ? seed.expert_n : null),
     effective_expert_n: assignment?.effective_expert_n ?? null,
     timestamp_utc: String(response.timestamp_utc || new Date().toISOString()),
